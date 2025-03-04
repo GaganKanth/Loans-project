@@ -87,6 +87,7 @@ public class LoanController {
 
 
     }
+    @DeleteMapping("/delete")
     public ResponseEntity<ResponseDto>deleteRecord(@RequestBody @Pattern(regexp="(^$|[0-9]{10})",message = "Mobile number must be 10 digits") String mobileNumber){
         deleteLoanService.deleteRecord(mobileNumber);
         return ResponseEntity
