@@ -1,0 +1,10 @@
+server:
+  port: 8092
+  servlet:
+    context-path: /loans/v1
+spring:
+  application:
+    name: loans
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/accounts-db?
